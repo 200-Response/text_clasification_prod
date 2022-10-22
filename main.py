@@ -136,7 +136,7 @@ def predictor_fn(text):
     sentence = [
         "Los hombres son mejores que las mujeres.",
     ]
-    sequences = tokenizer.texts_to_sequences(sentence)
+    sequences = tokenizer.texts_to_sequences(text)
     padded = pad_sequences(sequences,
                            maxlen=max_length,
                            padding=padding_type,
